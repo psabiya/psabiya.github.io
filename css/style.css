@@ -1,0 +1,97 @@
+body {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(228, 112, 112)), to(rgb(172, 236, 233))); background: linear-gradient(rgb(228, 112, 112), rgb(172, 236, 233));
+}
+
+a {
+  text-decoration: none;color: #000;
+}
+
+.form-control {
+  position: relative;
+}
+
+.style {
+  padding: 10% 0;
+}
+.style h1:hover {
+  color: #b3dbd9;
+}
+.style h1:hover span {
+  color: #e27373;
+}
+
+.couple {
+  width: 95%;height: 550px;
+}
+
+.nav-item {
+  font-size: 23px;color: #000 !important;
+}
+.nav-item:hover {
+  -webkit-transform: scale(1.2);transform: scale(1.2);
+}
+
+.searchbar {
+  margin-bottom: auto;margin-top: auto;height: 60px;background-color: #fff;border-radius: 30px;padding: 10px;
+}
+
+.search_input {
+  color: black;border: 0;outline: 0;background: none;width: 0;caret-color: transparent;line-height: 40px;-webkit-transition: width 0.4s linear; transition: width 0.4s linear;
+}
+
+.searchbar:hover > .search_input {
+  padding: 0 10px;width: 190px;caret-color: #f5b0be;-webkit-transition: width 0.4s linear;transition: width 0.4s linear;
+}
+
+.searchbar:hover > .search_icon {
+  background: white;color: #f5b0be;
+}
+
+.search_icon {
+  height: 40px; width: 40px;float: right;display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;-webkit-box-align: center;
+      -ms-flex-align: center;align-items: center;border-radius: 50%;color: #f5b0be;text-decoration: none;
+}
+
+.btn {
+  -webkit-transition: 0.5s;transition: 0.5s;
+}
+.btn:hover {
+  -webkit-transform: scale(1.1); transform: scale(1.1);-webkit-box-shadow: 8px 8px #ecdbb7;box-shadow: 8px 8px #ecdbb7;color: rgb(245, 126, 146) !important;
+}
+
+footer {
+  bottom: 0;
+}
+footer .copyright {
+  color: gray;padding-top: 180px;
+}
+footer .icon {padding-top: 100px;
+}
+
+table td .class-text {position: relative;}
+table td .class-text .overlay { -webkit-transform: translateY(0);transform: translateY(0);-webkit-box-ordinal-group: 1000;-ms-flex-order: 999;
+          order: 999;position: absolute;bottom: 1px;-webkit-transition: 1s;transition: 1s;visibility: hidden;color: #fff;width: 200px;}
+table td .class-text:hover .overlay {visibility: visible;-webkit-transform: translateY(-100px);transform: translateY(-100px);}
+table td img {width: 90%;height: 500px;-webkit-transition: 0.9s;transition: 0.9s;}
+table td img:hover {-webkit-filter: blur(8px);filter: blur(8px);}
+
+.top-bar .gift ul li a:hover {color: red !important;}
+.top-bar .cart ul {gap: 30px;}
+.top-bar .cart ul li {position: relative;}
+.top-bar .cart ul li sup {position: absolute;top: 3px;right: -8px;}
+.top-bar .cart ul li:hover {color: red !important;cursor: pointer;}
+.owl-carousel { position: relative;}
+.owl-prev {position: absolute;top: 43%;left: -20px;}
+.owl-prev span {font-size: 50px;color: #fff;}
+.owl-next {position: absolute;top: 43%;right: -20px;}
+.owl-next span {font-size: 50px;color: #fff;}
+.contact {text-align: center; /*aligning text to center*/}
+.first {font-size: 18px; /*font size to 18 px for .first*/}
+.contact-us {margin-left: 25%; /*margin to left for contact page*/ margin-right: 25%; /*margin to right for contact page*/display: -webkit-box;display: -ms-flexbox;display: flex; /*displaying flex content*/
+  -webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: space-between; /*justifying flex content*/border-style: solid; /*adding border in section*/padding: 2px; /*padding the content*/
+  padding-left: 25px; /*padding left for the content*/border-width: 3px; /*assigning border width*/border-color: #d1d8e0; /*assigning border colour*/padding-right: 25px;}
+/*form section edited*/
+article {margin-left: 15%; /*margin to left for contact page*/margin-right: 15%; /*margin to right for contact page*/display: -webkit-box;display: -ms-flexbox;display: flex; /*displaying flex content*/
+  -webkit-box-pack: start;-ms-flex-pack: start;justify-content: flex-start; /*justifying flex content*/ border-style: solid; /*adding border in section*/padding: 2px; /*padding the content*/
+  padding-left: 25px; /*assigning border width*/border-width: 3px; /*assigning border width*/border-color: #d1d8e0; /*assigning border colour*/padding-right: 25px;}
+.track-mid {width: 700px;}/*# sourceMappingURL=style.css.map */
