@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="img/illustratorlogo.png" type="image/icon type" />
+    <title>Fashion Freak</title>
+    <link rel="stylesheet" href="Bcss/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Top Start -->
+    <section class="top-bar py-3">
+      <div class="container d-flex justify-content-between align-items-center">
+        <div class="gift">
+          <ul class="list-unstyled d-flex text-white gap-3">
+            <li><a href="GiftCard.Html"> Gift Card</a></li>
+            <li><a href="TrackOrder.Html"> Track Order</a></li>
+            <li><a href="ContactUs.HTML">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="cart d-flex text-white">
+          <ul class="list-unstyled d-flex text-white">
+            <li>
+              <i class="bi bi-bag-heart-fill fs-4"></i>
+              <sup class="rounded-circle">0</sup>
+            </li>
+            <li><i class="bi bi-heart-fill fs-4"></i></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- Top End -->
+    <!-- Menu Start -->
+    <section class="menu">
+      <nav class="navbar navbar-expand-lg py-0">
+        <div class="container">
+          <a class="navbar-brand pe-5" href="index.html"
+            ><img
+              class="object-fit"
+              width="150px"
+              height="100px"
+              src="img/illustratorlogo.png"
+              alt="LOGO"
+          /></a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-1 mb-2 mb-lg-0 fs-5 gap-2">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="children.html"
+                  >Children</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Women.html"
+                  >Women</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Men.html"
+                  >Men</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="Wedding.html"
+                  >Wedding</a
+                >
+              </li>
+            </ul>
+            <div class="me-auto">
+              <div class="d-flex justify-content-center h-100">
+                <div class="searchbar">
+                  <input
+                    class="search_input"
+                    type="text"
+                    name=""
+                    placeholder="Search..."
+                  />
+                  <a href="#" class="search_icon"
+                    ><i class="fas fa-search"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <!-- Menu End -->
+    <!-- making class for contact -->
+    <div class="contact">
+      <h1>Contact Us</h1>
+    </div>
+    <!-- section under class contact -->
+    <section class="contact-us">
+      <!-- making two div for contact page detail. -->
+      <div class="first">
+        <br />
+        <b>Mailing Address</b><br /><br />
+        Fashion Freak<br />
+        Sukedhara,Kathmandu<br /><br /><br />
+        <b>Postal Code</b><br /><br />
+        44600<br /><br /><br />
+        <b>Contact Number</b><br /><br />
+        01-4811462<br /><br />
+      </div>
+      <div class="first">
+        <br />
+        <b> Email Address</b><br /><br />
+        fashionfreak890@gmail.com<br /><br /><br />
+        <b> Working Hours</b><br /><br />
+        Open: 10 A.M.<br />
+        Close: 5 P.M.<br /><br /><br />
+      </div>
+    </section>
+    <br /><br />
+    <div class="contact">
+      <h1>What would you like to know ?</h1>
+    </div>
+    <!-- validating Feedback Form -->
+    <script type="text/javascript">
+      function validate(form) {
+        //checking value for first name
+        if (form.firstname.value == "") {
+          alert("Please! enter your firstname");
+          form.firstname.focus(); //focusing on firstname box
+          return false;
+        }
+        if (form.lastname.value == "") {
+          //checking value for lastname
+          alert("Please! enter your Last name");
+          form.lastname.focus(); //focusing on lastname box
+          return false;
+        }
+        if (form.email.value == "") {
+          //checking value for email
+          alert("Please! enter your Email"); //focusing on email box
+          form.email.focus();
+          return false;
+        }
+      } //javascript for validation of form completed.
+    </script>
+    <!-- feedback form stated -->
+    <article>
+      <form method="POST" action="" onsubmit="return validate(this)">
+        <br />
+        <label>First Name : (required)</label><br />
+        <input
+          type="text"
+          name="firstname"
+          placeholder="Enter your Name..."
+        /><br /><br />
+        <label>Middle Name: (optional)</label><br />
+        <input
+          type="text"
+          name="middlename"
+          placeholder="Middle Name here..."
+        /><br /><br />
+        <label>Last Name: (required)</label><br />
+        <input
+          type="text"
+          name="lastname"
+          placeholder="Your Last Name..."
+        /><br /><br />
+        <label>Gender:</label>
+        <select id="gender" name="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+          <br /><br />
+        </select>
+        <br /><br />
+        <label>Email : (required)</label><br />
+        <input
+          type="Email"
+          name="email"
+          placeholder="youremail@example.com"
+        /><br /><br />
+        <label>Tel : (optional)</label><br />
+        <input type="text" name="tel" placeholder="+977" /><br /><br />
+        <label>Subject :</label><br />
+        <input type="text" name="Subject" /><br /><br />
+        <textarea name="message" rows="10" cols="53" value="Review"></textarea
+        ><br /><br />
+        <input type="submit" value="Submit" /><br /><br />
+      </form>
+      <!-- form completed -->
+      <!-- image added in form -->
+      <!-- making new div for image -->
+      <div class="image py-5">
+        <!-- image source-https://www.bielefeldjasicher.de/images/speech.png -->
+        <img
+          width="100%"
+          height="400px"
+          src="img/feedback.png"
+          alt="responsive picture"
+        />
+      </div>
+    </article>
+    <div class="contact">
+      <h1>Find Us</h1>
+      <!-- using google api for adding map in the website -->
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3531.7422456186746!2d85.34707191493729!3d27.725243531312525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2snp!4v1521252956441"
+        width="990"
+        height="600"
+        frameborder="0"
+        style="border: 0"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <!-- Footer Start -->
+    <footer class="bg-dark text-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <ul class="list-unstyled pt-5">
+              <li>Fashion Freak</li>
+              <li>Sukedhara, Kathmandu</li>
+              <li>Nepal</li>
+              <li>01--4811462</li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <p class="copyright">
+              ©COPYRIGHT 2023 Fashion Freak, All Rights Reserved
+            </p>
+          </div>
+          <div class="col-lg-2 pt-auto">
+            <div class="icon text-center">
+              <a href="Sitemap.html" class="btn btn-secondary py-3 px-4 mb-4"
+                >Site Map</a
+              >
+              <ul
+                class="list-unstyled d-flex gap-3 fs-5 justify-content-end me-4"
+              >
+                <li>
+                  <a href="https://github.com/psabiya/IT.git"
+                    ><i class="bi bi-github"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.facebook.com/people/Fashion-Freak/100091775088764/"
+                    ><i class="bi bi-facebook text-primary"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/fashion_freak________/?igshid=ZDdkNTZiNTM%3D"
+                    ><i class="bi bi-instagram text-danger-emphasis"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/@FashionFreak-ej6gz"
+                    ><i class="bi bi-youtube text-danger"></i
+                  ></a>
+                </li>
+
+                <li>
+                  <a href="mailto: fashionfreak890@gmail.com"
+                    ><i class="bi bi-envelope-fill text-light"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+    <script src="Bjs/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
